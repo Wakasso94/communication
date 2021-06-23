@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="sec">
+    <header>
+      <a href="#" class="logo">Logo</a>
+      <div class="toggleMenu" onclick="menuToggle();"></div>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBx">
+        <h2>Responsive<br><span>Website Design</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+    <!-- Website For Svg Shape -->
+    <!-- https://www.shapedivider.app/ -->
+    <div class="custom-shape-divider-bottom-1600710071">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+    <img src="girl.png" class="girl">
+    <!-- Image Source -->
+    <!-- https://purepng.com/photo/30157/female-woman-using-laptop -->
+  </section>
+  <script type="text/javascript">
+    function menuToggle(){
+      const toggleMenu = document.querySelector('.toggleMenu');
+      const navigation = document.querySelector('.navigation');
+      toggleMenu.classList.toggle('active');
+      navigation.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
